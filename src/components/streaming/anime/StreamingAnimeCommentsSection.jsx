@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from "react";
-import { ThumbsUp, Send, ArrowUpDown, MessageCircle } from "lucide-react";
+import { ThumbsUp, Send, ArrowUpDown, MessageSquare } from "lucide-react";
 import commentsData from "../../../data/comments.json";
 
 const StreamingAnimeCommentsSection = () => {
@@ -61,7 +61,7 @@ const StreamingAnimeCommentsSection = () => {
             {/* Header */}
             <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2">
-                    <MessageCircle size={16} className="text-gray-500" />
+                    <MessageSquare size={16} className="text-gray-500" />
                     <h3 className="text-sm font-bold text-white">
                         Comments <span className="text-gray-600 font-normal">({comments.length})</span>
                     </h3>
@@ -132,3 +132,4 @@ const StreamingAnimeCommentsSection = () => {
 };
 
 export default StreamingAnimeCommentsSection;
+            
