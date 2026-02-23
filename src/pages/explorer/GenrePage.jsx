@@ -5,8 +5,7 @@ import {
     Play, Loader2, Star, ArrowLeft, ChevronLeft, ChevronRight,
     Wand2, Sword, Heart, Zap, Ghost, Laugh, Drama, Rocket,
     Target, Music, School, Skull, Coffee, Brain, Baby, Eye, Tv, Sparkles,
-    Swords, Flame, Shield, Crown, Telescope, Dna, Microscope, BookOpen,
-    Gamepad2, Car, Plane, MapPin, TreePine, Sunset, Moon
+    Flame, Shield, Navigation, Search
 } from 'lucide-react';
 import axios from 'axios';
 
@@ -60,15 +59,15 @@ const getGenreIcon = (genreName) => {
         'Drama': Drama,
         'Ecchi': Heart,
         'Fantasy': Wand2,
-        'Game': Gamepad2,
+        'Game': Target,
         'Harem': Heart,
-        'Historical': Crown,
+        'Historical': Shield,
         'Horror': Skull,
         'Isekai': Sparkles,
         'Josei': Heart,
         'Kids': Baby,
         'Magic': Wand2,
-        'Martial Arts': Swords,
+        'Martial Arts': Flame,
         'Mecha': Shield,
         'Military': Target,
         'Music': Music,
@@ -78,17 +77,17 @@ const getGenreIcon = (genreName) => {
         'Romance': Heart,
         'Samurai': Sword,
         'School': School,
-        'Sci-Fi': Telescope,
+        'Sci-Fi': Navigation,
         'Seinen': Brain,
         'Shoujo': Heart,
         'Shounen': Zap,
         'Slice of Life': Coffee,
-        'Space': Telescope,
+        'Space': Navigation,
         'Sports': Target,
         'Super Power': Zap,
         'Supernatural': Ghost,
         'Thriller': Eye,
-        'Vampire': Moon,
+        'Vampire': Skull,
     };
     return iconMap[genreName] || Sparkles;
 };
