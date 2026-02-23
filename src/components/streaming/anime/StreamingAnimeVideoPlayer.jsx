@@ -1,5 +1,5 @@
 import { forwardRef } from 'react';
-import { MonitorPlay, Loader2 } from 'lucide-react';
+import { Monitor, Loader2 } from 'lucide-react';
 
 const StreamingAnimeVideoPlayer = forwardRef(({
     selectedServer,
@@ -12,7 +12,7 @@ const StreamingAnimeVideoPlayer = forwardRef(({
             {!selectedServer ? (
                 <div className="w-full h-full flex flex-col items-center justify-center bg-dark-card">
                     <div className="w-14 h-14 rounded-2xl bg-dark-surface flex items-center justify-center mb-3">
-                        <MonitorPlay size={28} className="text-gray-600" />
+                        <Monitor size={28} className="text-gray-600" />
                     </div>
                     <p className="text-sm text-gray-500">No stream available</p>
                 </div>
