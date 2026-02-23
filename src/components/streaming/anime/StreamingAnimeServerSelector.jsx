@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import {
-    MonitorPlay, Download, Share2, Flag,
+    Monitor, Download, Share2, Flag,
     ThumbsUp, ThumbsDown, X, ExternalLink, ChevronRight
 } from "lucide-react";
 
@@ -31,7 +31,7 @@ const StreamingAnimeServerSelector = ({ streams = [], selectedServer, downloads 
             onClick: () => { setDisliked(!disliked); if (liked) setLiked(false); }
         },
         {
-            icon: <MonitorPlay size={17} />,
+            icon: <Monitor size={17} />,
             label: selectedServer?.server || 'Quality',
             onClick: () => setSheet('quality')
         },
@@ -89,7 +89,7 @@ const StreamingAnimeServerSelector = ({ streams = [], selectedServer, downloads 
                         {/* Header */}
                         <div className="flex items-center justify-between px-5 mb-4">
                             <div className="flex items-center gap-2">
-                                {sheet === 'quality' ? <MonitorPlay size={18} className="text-primary-400" /> : <Download size={18} className="text-primary-400" />}
+                                {sheet === 'quality' ? <Monitor size={18} className="text-primary-400" /> : <Download size={18} className="text-primary-400" />}
                                 <h3 className="text-base font-bold text-white">
                                     {sheet === 'quality' ? 'Select Quality' : 'Download'}
                                 </h3>
@@ -166,3 +166,4 @@ const StreamingAnimeServerSelector = ({ streams = [], selectedServer, downloads 
 };
 
 export default StreamingAnimeServerSelector;
+                                        
