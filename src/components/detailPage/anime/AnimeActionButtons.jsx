@@ -1,4 +1,4 @@
-import { Play, Bookmark, Download } from 'lucide-react';
+import { Play, Bookmark } from 'lucide-react';
 
 const AnimeActionButtons = ({ onWatchNow, onBookmark, bookmarked }) => {
     return (
