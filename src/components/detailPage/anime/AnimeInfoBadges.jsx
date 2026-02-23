@@ -1,4 +1,4 @@
-import { Tv, Clock, Calendar, CheckCircle2, RefreshCw } from 'lucide-react';
+import { Tv, Clock, Calendar, Check, RotateCcw } from 'lucide-react';
 
 const Badge = ({ icon: Icon, label, value, accent }) => {
     if (!value) return null;
@@ -14,7 +14,7 @@ const AnimeInfoBadges = ({ status, type, totalEpisodes, released }) => {
     const isOngoing = status?.toLowerCase().includes('ongoing') || status?.toLowerCase().includes('airing');
     return (
         <div className="flex flex-wrap gap-2 mb-5">
-            <Badge icon={isOngoing ? RefreshCw : CheckCircle2} value={status} accent={isOngoing} />
+            <Badge icon={isOngoing ? RotateCcw : Check} value={status} accent={isOngoing} />
             <Badge icon={Tv} value={type} />
             {totalEpisodes > 0 && <Badge icon={Clock} value={`${totalEpisodes} Eps`} />}
             <Badge icon={Calendar} value={released} />
